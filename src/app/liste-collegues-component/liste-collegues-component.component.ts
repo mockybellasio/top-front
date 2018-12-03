@@ -7,19 +7,10 @@ import { Collegue } from '../models';
 })
 export class ListeColleguesComponentComponent implements OnInit {
 
-  @Input() collegues:Collegue[]
-
-  
- /* <ul>
-  <li ngFor="let obj of maListe"> {{obj.nom}} </li>
-</ul>
-*/
+  @Input() listeCollegues:Collegue[]
 
   constructor() { }
 
-  
-
-  
   ngOnInit() {
   }
 

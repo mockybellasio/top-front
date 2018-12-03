@@ -1,11 +1,5 @@
-import { Component, Input} from '@angular/core';
+import { AvisComponentComponent } from './avis-component/avis-component.component';
 
-@Component({
-    selector: 'mon-composant',
-    template: `
-        <h1>{{titre}}</h1>
-    `
-})
 export class Collegue {
 
     pseudo: string
@@ -15,7 +9,7 @@ export class Collegue {
     listImages: string[];
 
 
-   constructor( pseudo, score, listImages) { 
+   constructor( pseudo:string, score:number, listImages:string[]) { 
 
         this.pseudo = pseudo;
 
@@ -24,27 +18,11 @@ export class Collegue {
         this.listImages = listImages
     }
 
-    traiter(av:Avis){
-
-        if(av===Avis.AIMER){
-
-            this.score+=100;
-
-        }else{
-
-            this.score-=100;
-
-        }
-
-    }
-
-
 }
 
 export enum Avis {
 
     AIMER, DETESTER
-
 }
 
   

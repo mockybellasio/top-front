@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Collegue } from '../models';
+import { Collegue, Avis } from '../models';
 
 @Component({
   selector: 'app-collegue-component',
@@ -11,6 +11,20 @@ export class CollegueComponentComponent implements OnInit {
   @Input() collegue:Collegue
 
   constructor() { }
+
+  traiter(av:Avis){
+
+    if(av===Avis.AIMER){
+
+        this.collegue.score+=100;
+
+    }else{
+
+        this.collegue.score-=100;
+
+    }
+
+}
 
   ngOnInit() {
   }

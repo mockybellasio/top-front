@@ -10,9 +10,14 @@ export class ListeColleguesComponentComponent implements OnInit {
   @Input() collegues:Collegue[]
 
   
+ /* <ul>
+  <li ngFor="let obj of maListe"> {{obj.nom}} </li>
+</ul>
+*/
+
   constructor() { }
 
-   
+  
 
   
   ngOnInit() {

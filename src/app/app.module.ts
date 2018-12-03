@@ -6,6 +6,7 @@ import { BandeauComponentComponent } from './bandeau-component/bandeau-component
 import { AvisComponentComponent } from './avis-component/avis-component.component';
 import { CollegueComponentComponent } from './collegue-component/collegue-component.component';
 import { ListeColleguesComponentComponent } from './liste-collegues-component/liste-collegues-component.component';
+import { TitreComponent } from './titre/titre.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ListeColleguesComponentComponent } from './liste-collegues-component/li
     BandeauComponentComponent,
     AvisComponentComponent,
     CollegueComponentComponent,
-    ListeColleguesComponentComponent
+    ListeColleguesComponentComponent,
+    TitreComponent
   ],
   imports: [
     BrowserModule

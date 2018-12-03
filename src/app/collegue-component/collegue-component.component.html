@@ -5,9 +5,6 @@
  {{collegue.pseudo}}
  {{collegue.score}}
 
-<input type="submit" name="j'aime" value="j'aime" />
-<input type="submit" name="je déteste" value="je déteste" />
-
 </p>
-
+<app-avis-component  (change) ="traiter($event)"> </app-avis-component>
 

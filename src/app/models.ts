@@ -8,16 +8,43 @@ import { Component, Input} from '@angular/core';
 })
 export class Collegue {
 
-    @Input() collegue:string;
+    pseudo: string
 
-    collegues:string[];
+    score: number
 
-  constructor() {
-    this.collegues = ['Yves', 'Landry', 'Bob']
-  }
+    listImages: string[];
 
-  ngOnInit() {
-  }
+
+   constructor( pseudo, score, listImages) { 
+
+        this.pseudo = pseudo;
+
+        this.score =score;
+
+        this.listImages = listImages
+    }
+
+    traiter(av:Avis){
+
+        if(av===Avis.AIMER){
+
+            this.score+=100;
+
+        }else{
+
+            this.score-=100;
+
+        }
+
+    }
+
 
 }
 
+export enum Avis {
+
+    AIMER, DETESTER
+
+}
+
+  

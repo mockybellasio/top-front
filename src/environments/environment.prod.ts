@@ -1,3 +1,8 @@
+
+
 export const environment = {
-  production: true
+  production: true,
+
+  backendUrl: "https://mocky-top-back.herokuapp.com/versions"
+
 };

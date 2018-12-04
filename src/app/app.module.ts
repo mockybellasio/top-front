@@ -9,6 +9,8 @@ import { ListeColleguesComponentComponent } from './liste-collegues-component/li
 import { TitreComponent } from './titre/titre.component';
 import { HistoriqueVotesComponentComponent } from './historique-votes-component/historique-votes-component.component';
 import { AccueilComponentComponent } from './accueil-component/accueil-component.component';
+import { CollegueService } from './services/collegue.service';
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { AccueilComponentComponent } from './accueil-component/accueil-component
     TitreComponent,
     HistoriqueVotesComponentComponent,
     AccueilComponentComponent
+   
   ],
   imports: [
-    BrowserModule
+    BrowserModule, 
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CollegueService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

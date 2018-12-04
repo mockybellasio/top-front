@@ -7,9 +7,12 @@ import { Collegue } from '../models';
 })
 export class ListeColleguesComponentComponent implements OnInit {
 
-  @Input() listeCollegues:Collegue[]
+  @Input() collegues:Collegue[]
+
+
 
   constructor() { }
+
 
   ngOnInit() {
   }

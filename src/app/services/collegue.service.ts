@@ -1,7 +1,7 @@
 
 import { environment } from '../../environments/environment';
 
-import { Collegue} from '../models';
+import { Collegue, Avis} from '../models';
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from '@angular/core';
 
@@ -20,18 +20,22 @@ export class CollegueService {
 
     // récupérer la liste des collègues côté serveur
 
-    return this._http.get('http://localhost:8080/collegues').toPromise()
+    return this._http.get( URL_BACKEND + '/collegues').toPromise()
 
       .then((tabColServeur: any[]) => tabColServeur.map(cServeur => new Collegue(cServeur.pseudo,  cServeur.score, [cServeur.photo])));
 
   }
 
 
-  //donnerUnAvis(unCollegue:Collegue, avis:Avis):Promise<Collegue>  {
+  donnerUnAvis(unCollegue:Collegue, avis:Avis):Promise<Collegue>  {
 
   // TODO Aimer ou Détester un collègue côté serveur
 
-  //  return this._http.patch('http://localhost:8080/collegues').toPromise()
+   return this._http.patch<Collegue>(`${URL_BACKEND}/Collegues/${unCollegue.pseudo}`, { 
+  Avis: avis.valueOf() 
+  }) 
 
+  .toPromise();
 }
 
+}

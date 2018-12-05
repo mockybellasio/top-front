@@ -27,7 +27,7 @@ export class CollegueService {
   }
 
 
-  donnerUnAvis(unCollegue:Collegue, avis:Avis):Promise<Collegue>  {
+   donnerUnAvis(unCollegue:Collegue, avis:Avis):Promise<Collegue>  {
 
   // TODO Aimer ou Détester un collègue côté serveur
 
@@ -35,7 +35,9 @@ export class CollegueService {
   Avis: avis.valueOf() 
   }) 
 
-  .toPromise();
+.toPromise();
+
+
 }
 
 }

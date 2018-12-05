@@ -1,7 +1,7 @@
 
 import { environment } from '../../environments/environment';
 
-import { Collegue, Avis } from '../models';
+import { Collegue} from '../models';
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from '@angular/core';
 

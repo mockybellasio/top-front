@@ -20,7 +20,9 @@ export class AjoutcollegueComponent implements OnInit {
     console.log(this.ajoutCollegue)
   }
 
+ activerBouton(){
 
+ }
 
 }
 

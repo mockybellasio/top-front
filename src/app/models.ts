@@ -8,14 +8,29 @@ export class Collegue {
 
     listImages: string[];
 
+    nom : String
 
-    constructor(pseudo: string, score: number, listImages: string[]) {
+    prenom : String 
+
+    email : String 
+
+    adresse : String 
+
+
+    constructor(pseudo: string, score: number, listImages: string[], nom : String, prenom : String, email : String , adresse : String   ) {
 
         this.pseudo = pseudo;
 
         this.score = score;
 
         this.listImages = listImages
+        this.nom = nom;
+        this.prenom = prenom;
+        this.email = email;
+        this.adresse = adresse; 
+        
+
+
     }
 
 }

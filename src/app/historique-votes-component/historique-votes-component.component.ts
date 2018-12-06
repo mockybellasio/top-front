@@ -15,14 +15,12 @@ export class HistoriqueVotesComponentComponent implements OnInit {
 
   ngOnInit() {
 
-
  }
 
  suppr(vote:Vote) {
 
-  
-
    this.listevote =  this.listevote.filter(v => v !== vote)
+
  }
 
  }

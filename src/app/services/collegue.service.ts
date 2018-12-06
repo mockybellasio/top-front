@@ -39,7 +39,7 @@ export class CollegueService {
   }
   colleguesParPseudo(pseudo: string): Promise<Collegue> {
 
-   return this._http.get<Collegue>(`${URL_BACKEND}/collegues/${pseudo}`).toPromise().then((c: Collegue) => c); 
+   return this._http.get<Collegue>(`${URL_BACKEND}/collegues/${pseudo}`).toPromise().then((cServeur: Collegue) => new Collegue(cServeur.pseudo, cServeur.score, cServeur.listImages, cServeur.nom, cServeur.prenom, cServeur.email, cServeur.adresse)); 
 
 }
 

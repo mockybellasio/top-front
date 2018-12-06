@@ -16,6 +16,7 @@ import {AproposComponent} from './apropos/apropos.component'
 
 import { RouterModule, Routes } from '@angular/router';
 import { DetailComponent } from './detail/detail.component';
+import { AjoutcollegueComponent } from './ajoutcollegue/ajoutcollegue.component';
 
 
 
@@ -49,7 +50,9 @@ const appRoutes: Routes = [
    
     AproposComponent,
    
-    DetailComponent
+    DetailComponent,
+   
+    AjoutcollegueComponent
   ],
   imports: [
    

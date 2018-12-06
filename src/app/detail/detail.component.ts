@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Collegue, Vote, } from '../models';
+import { Collegue, Vote} from '../models';
 import { CollegueService } from '../services/collegue.service';
 @Component({
   selector: 'app-detail',
@@ -10,8 +10,8 @@ import { CollegueService } from '../services/collegue.service';
 export class DetailComponent implements OnInit {
 
 
-  collegue:Collegue ; //= new Collegue("Rob", 800, "listImages[0]", "Robert", "dupont", "robert@hotmail.fr", "7 rue de la gare paris");
- // collegue1: Collegue = new Collegue("Alice", 1000, "collegue.listImages[1]", "Alicia", "duval", "alice@hotmail.fr", "10 rue de la mairie Montpellier ");
+  collegue:Collegue; //= new Collegue('', 0, '', '', '', '', '');
+ 
 
   pseudo: string;
 

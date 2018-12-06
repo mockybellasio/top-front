@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { Avis, Collegue } from '../models';
+import { AjoutcollegueComponent } from '../ajoutcollegue/ajoutcollegue.component';
 
 
 
@@ -43,4 +44,10 @@ export class CollegueService {
 
 }
 
+CreerNouveauCollegue(ajoutcollegue: AjoutcollegueComponent): Promise<AjoutcollegueComponent> {
+
+ return this._http.post( `${URL_BACKEND}/collegues/ajouter`,ajoutcollegue)
+ .toPromise().then((c: AjoutcollegueComponent) => c);
+
+}
 }

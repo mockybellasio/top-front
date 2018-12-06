@@ -10,7 +10,7 @@ import { CollegueService } from '../services/collegue.service';
 export class DetailComponent implements OnInit {
 
 
-  collegue:Collegue; //= new Collegue('', 0, '', '', '', '', '');
+  collegue:Collegue  = new Collegue('rob ', 800, [], 'robert', 'dupont', 'robert@hotmail.fr', '7 rue de la gare ');
  
 
   pseudo: string;

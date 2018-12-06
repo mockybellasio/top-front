@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CollegueForm } from '../models';
 
 
 @Component({
@@ -8,16 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AjoutcollegueComponent implements OnInit {
 
-  matricule :String
-  pseudo : String
-  urlImage: String
+  ajoutCollegue : CollegueForm = new CollegueForm()
 
 
   ngOnInit() {
+
+  }
+
+  submit() {
+    console.log(this.ajoutCollegue)
   }
 
 
-    
 
-  }
+}
+
+  
 

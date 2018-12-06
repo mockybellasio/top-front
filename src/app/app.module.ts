@@ -13,8 +13,9 @@ import { CollegueService } from './services/collegue.service';
 import { TitreComponent } from './titre/titre.component';
 import {AproposComponent} from './apropos/apropos.component'
 
-
+import { FormsModule }   from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+
 import { DetailComponent } from './detail/detail.component';
 import { AjoutcollegueComponent } from './ajoutcollegue/ajoutcollegue.component';
 
@@ -26,7 +27,9 @@ const appRoutes: Routes = [
 
   { path: "apropos", component: AproposComponent }, 
 
-  { path: "detail/:pseudo", component: DetailComponent }   
+  { path: "detail/:pseudo", component: DetailComponent } ,  
+
+  { path : "ajouter", component : AjoutcollegueComponent}
 
 
   /*{ path: "", redirectTo: "/accueil", pathMatch: "full" }, 
@@ -47,15 +50,15 @@ const appRoutes: Routes = [
     HistoriqueVotesComponentComponent,
     AccueilComponentComponent,
     MenuComponent,
-   
+
     AproposComponent,
-   
+
     DetailComponent,
-   
     AjoutcollegueComponent
+
   ],
   imports: [
-   
+    FormsModule,
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes)

@@ -1,4 +1,9 @@
 
+export class CollegueForm {
+    matricule :String
+    pseudo : String
+    urlImage: String
+}
 
 export class Collegue {
 

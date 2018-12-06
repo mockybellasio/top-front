@@ -1,20 +1,20 @@
 
-<!-- 
-<h1>  {{collegue.pseudo }} </h1>
 
-<form (ngSubmit)="submit(ajoutCollegue.value)" #monForm="ngForm">
+<h1>  {{ajoutCollegue.matricule}}  </h1>
+
+<form (ngSubmit)="submit()" #form="ngForm">
 
   <label>Matricule</label>
-  <input [(ngModel)]="collegue.matricule" name = matricule  #matricule="ngModel" required minlength="3">
+  <input [(ngModel)]="ajoutCollegue.matricule" type = "text"  name = "matricule"  #matricule="ngModel" required minlength="3">
 
   <label>pseudo</label>
-  <input [(ngModel)]="collegue.pseudo" name = pseudo   #pseudo="ngModel" required>
+  <input [(ngModel)]="ajoutCollegue.pseudo" type = "text"  name = "pseudo"   #pseudo="ngModel" >
 
    <label>URLImages</label>
-  <input [(ngModel)]="collegue.url" name = url  #urlimages="ngModel" required>
+  <input [(ngModel)]="ajoutCollegue.url"  type = "text" name = "url"  #urlimages="ngModel" >
   
   <button type="submit">ajouter</button>
 </form>
 
--->
+
 

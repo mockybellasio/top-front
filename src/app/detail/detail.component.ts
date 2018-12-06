@@ -9,6 +9,7 @@ import { CollegueService } from '../services/collegue.service';
 })
 export class DetailComponent implements OnInit {
 
+
   collegue:Collegue;
 
   pseudo: string;

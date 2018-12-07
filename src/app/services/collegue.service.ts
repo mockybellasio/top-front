@@ -17,6 +17,11 @@ export class CollegueService {
 
   constructor(private _http: HttpClient) { }
 
+
+   // subVoteCollegue = new Subject <vote> ()
+
+   // getactiono
+
   listerCollegues(): Promise<Collegue[]> {
 
     // récupérer la liste des collègues côté serveur
@@ -48,6 +53,8 @@ CreerNouveauCollegue(ajoutcollegue: AjoutcollegueComponent): Promise<Ajoutcolleg
 
  return this._http.post( `${URL_BACKEND}/collegues/ajouter`,ajoutcollegue)
  .toPromise().then((c: AjoutcollegueComponent) => c);
+
+
 
 }
 }

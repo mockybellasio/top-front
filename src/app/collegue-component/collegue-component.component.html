@@ -3,9 +3,9 @@
 
 <img src = "{{collegue.listImages[0]}}" height =" 400" width="400">
 
-  <a routerLink="/detail/{{collegue.pseudo}}" > {{collegue.pseudo}} </a>
+  <a routerLink="/detail/{{collegue.pseudo}}" > {{collegue.pseudo | uppercase}} </a>
 
- {{collegue.score}}
+ <div [innerHTML] = " collegue.score | score "> </div>
 
 
 <app-avis-component  (change) ="traiter($event)"> </app-avis-component>

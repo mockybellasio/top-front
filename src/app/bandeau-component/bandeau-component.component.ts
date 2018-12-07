@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BandeauComponentComponent implements OnInit {
 
+  // votreRecu : Observable <vote> 
+ // votrerecu : vote = new Vote()
+ 
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
+
+
+// constructor( private colServ : Collegueservice) { }
+
+//ngOnInit() {
+
+ //this .colServ.subVoteCollegue.subscibe( vote => this.votrerecu = vote)
+// }

@@ -54,7 +54,5 @@ CreerNouveauCollegue(ajoutcollegue: AjoutcollegueComponent): Promise<Ajoutcolleg
  return this._http.post( `${URL_BACKEND}/collegues/ajouter`,ajoutcollegue)
  .toPromise().then((c: AjoutcollegueComponent) => c);
 
-
-
 }
 }

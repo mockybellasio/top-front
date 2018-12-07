@@ -19,6 +19,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DetailComponent } from './detail/detail.component';
 import { AjoutcollegueComponent } from './ajoutcollegue/ajoutcollegue.component';
 import { ScorePipe } from './pipes/score.pipe';
+import { FiltrecolleguePipe } from './pipes/filtrecollegue.pipe';
 
 
 
@@ -56,7 +57,9 @@ const appRoutes: Routes = [
 
     DetailComponent,
     AjoutcollegueComponent,
-    ScorePipe
+    ScorePipe,
+  
+    FiltrecolleguePipe
 
   ],
   imports: [
